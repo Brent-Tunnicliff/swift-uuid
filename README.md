@@ -2,6 +2,9 @@
 
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FBrent-Tunnicliff%2Fuuid-versions%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Brent-Tunnicliff/uuid-versions)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FBrent-Tunnicliff%2Fuuid-versions%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/Brent-Tunnicliff/uuid-versions)
+[![Pipeline](https://github.com/Brent-Tunnicliff/uuid-versions/actions/workflows/pipeline.yml/badge.svg)](https://github.com/Brent-Tunnicliff/uuid-versions/actions/workflows/pipeline.yml)
+[![Documentation](https://github.com/Brent-Tunnicliff/uuid-versions/actions/workflows/documentation.yml/badge.svg)](https://github.com/Brent-Tunnicliff/uuid-versions/actions/workflows/documentation.yml)
+[![](https://img.shields.io/github/license/Brent-Tunnicliff/uuid-versions)](https://github.com/Brent-Tunnicliff/uuid-versions/blob/main/LICENSE)
 
 The main purpose of this project is to expand Foundation UUID creation to support various versions 
 as per [RFC 9562](https://www.rfc-editor.org/rfc/rfc9562).
@@ -43,7 +46,7 @@ Import via SPM:
 let package = Package(
     // ...
     dependencies: [
-        .package(url: "https://github.com/Brent-Tunnicliff/uuid-versions.git", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/Brent-Tunnicliff/uuid-versions.git", from: "1.0.0"),
     ],
     targets: [
         .target(
